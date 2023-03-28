@@ -5,7 +5,7 @@ function App() {
   const [userSelection, setuserSelection] = useState("");
   const [compSelection, setcompSelection] = useState("");
   const [result, setResult] = useState("");
-  const options = ["Rock", "Paper", "Scissor"];
+  const options = ["Rock", "Paper", "Scissors"];
   const calculateWinner = (userSelection) => {
     const compSelection = options[Math.floor(Math.random() * 3)];
     setcompSelection(compSelection);
@@ -13,9 +13,9 @@ function App() {
       return "Draw";
     } else if (userSelection === "Rock" && compSelection == "Paper") {
       return "Computer Won";
-    } else if (userSelection === "Paper" && compSelection === "Scissor") {
+    } else if (userSelection === "Paper" && compSelection === "Scissors") {
       return "Computer Won";
-    } else if (userSelection === "Scissor" && compSelection === "Rock") {
+    } else if (userSelection === "Scissors" && compSelection === "Rock") {
       return "Computer Won";
     } else {
       return "User Won";
