@@ -23,6 +23,7 @@ function App() {
   };
   return (
     <div className="App">
+      <img src="rock-paper-scissor.jpeg" alt="logo" style={{width:100}}/>
       <h2>Select Option</h2>
       {options.map((option, index) => {
         return (
